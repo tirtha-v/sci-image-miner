@@ -2,8 +2,7 @@
 outputs/
 logs/
 
-# Dataset images (not included in repo)
-data/crops/
+# External datasets (not included — too large)
 data/external/
 
 # Jupyter

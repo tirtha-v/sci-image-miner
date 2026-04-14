@@ -1,0 +1,3 @@
+[submodule "ALD-E-ImageMiner"]
+	path = ALD-E-ImageMiner
+	url = https://github.com/sciknoworg/ALD-E-ImageMiner.git
