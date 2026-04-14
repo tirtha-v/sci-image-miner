@@ -1,0 +1,363 @@
+image_path,label,sample_id,panel_id
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig1_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/11/fig1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_2_a.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/11/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_3_a.jpg,multiple scatter plot,atomic-layer-deposition/experimental-usecase/11/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_4_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/11/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_4_b.jpg,image panel,atomic-layer-deposition/experimental-usecase/11/fig_4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_5_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/11/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_5_b.jpg,image panel,atomic-layer-deposition/experimental-usecase/11/fig_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_6_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/11/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_7_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/11/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_11_fig_8_a.jpg,multi spectra chart,atomic-layer-deposition/experimental-usecase/11/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig2_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/17/fig2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_1_a.jpg,process timing diagram,atomic-layer-deposition/experimental-usecase/17/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_10_b.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/17/fig_10,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_10_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/17/fig_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_11_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/17/fig_11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_3_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/17/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_4_a.jpg,stacked spectra chart,atomic-layer-deposition/experimental-usecase/17/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_5_a.jpg,unknown,atomic-layer-deposition/experimental-usecase/17/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_5_b.jpg,unknown,atomic-layer-deposition/experimental-usecase/17/fig_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_5_c.jpg,unknown,atomic-layer-deposition/experimental-usecase/17/fig_5,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_5_d.jpg,unknown,atomic-layer-deposition/experimental-usecase/17/fig_5,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_6_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/17/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_7_a.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/17/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_8_b.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/17/fig_8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_8_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/17/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_17_fig_9_a.jpg,line chart,atomic-layer-deposition/experimental-usecase/17/fig_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig4_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/46/fig4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig4_b.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/46/fig4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig_1_b.jpg,stacked spectra chart,atomic-layer-deposition/experimental-usecase/46/fig_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig_1_a.jpg,stacked spectra chart,atomic-layer-deposition/experimental-usecase/46/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig_2_b.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/46/fig_2,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig_2_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/46/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig_3_b.jpg,image panel,atomic-layer-deposition/experimental-usecase/46/fig_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_46_fig_3_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/46/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_1_a.jpg,molecular structure diagram,atomic-layer-deposition/experimental-usecase/47/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_1_b.jpg,molecular structure diagram,atomic-layer-deposition/experimental-usecase/47/fig_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_2_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/47/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_3_a.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/47/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_3_b.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/47/fig_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_3_c.jpg,line chart,atomic-layer-deposition/experimental-usecase/47/fig_3,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_4_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/47/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_47_fig_4_b.jpg,image panel,atomic-layer-deposition/experimental-usecase/47/fig_4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_58_fig5_a.jpg,line chart,atomic-layer-deposition/experimental-usecase/58/fig5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_58_fig_1_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/58/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_58_fig_1_b.jpg,image panel,atomic-layer-deposition/experimental-usecase/58/fig_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_58_fig_2_a.jpg,multi spectra chart,atomic-layer-deposition/experimental-usecase/58/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_58_fig_3_a.jpg,stacked spectra chart,atomic-layer-deposition/experimental-usecase/58/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_58_fig_4_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/58/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG1_a.jpg,process timing diagram,atomic-layer-deposition/experimental-usecase/68/FIG1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG2_a_a.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/68/FIG2_a,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG2_b_a.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/68/FIG2_b,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG2_c_a.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/68/FIG2_c,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG2_d_a.jpg,scatter plot,atomic-layer-deposition/experimental-usecase/68/FIG2_d,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG3_a_a.jpg,multiple scatter plot,atomic-layer-deposition/experimental-usecase/68/FIG3_a,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG3_b_a.jpg,multiple scatter plot,atomic-layer-deposition/experimental-usecase/68/FIG3_b,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG4_a2_a.jpg,molecular structure diagram,atomic-layer-deposition/experimental-usecase/68/FIG4_a2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG4_b_a.jpg,conceptual diagram,atomic-layer-deposition/experimental-usecase/68/FIG4_b,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG5_a_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/68/FIG5_a,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG5_b_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/68/FIG5_b,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG5_c_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/68/FIG5_c,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG5_d_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/68/FIG5_d,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG5_e_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/68/FIG5_e,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG5_f_a.jpg,image panel,atomic-layer-deposition/experimental-usecase/68/FIG5_f,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG6_a.jpg,stacked spectra chart,atomic-layer-deposition/experimental-usecase/68/FIG6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG7_a_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/68/FIG7_a,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_experimental-usecase_68_FIG7_b_a.jpg,multiple line chart,atomic-layer-deposition/experimental-usecase/68/FIG7_b,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig10_a.jpg,multi spectra chart,atomic-layer-deposition/simulation-usecase/13/fig10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig10_b.jpg,image panel,atomic-layer-deposition/simulation-usecase/13/fig10,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig10_c.jpg,image panel,atomic-layer-deposition/simulation-usecase/13/fig10,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig10_d.jpg,image panel,atomic-layer-deposition/simulation-usecase/13/fig10,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig10_e.jpg,image panel,atomic-layer-deposition/simulation-usecase/13/fig10,e
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig10_f.jpg,image panel,atomic-layer-deposition/simulation-usecase/13/fig10,f
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig2_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig2_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig2,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig2_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig2,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig2_d.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig2,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig2_e.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig2,e
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig2_f.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig2,f
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig3_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig3_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig3_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig3,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig3_d.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig3,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig4_a.jpg,line chart,atomic-layer-deposition/simulation-usecase/13/fig4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig4_b.jpg,line chart,atomic-layer-deposition/simulation-usecase/13/fig4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig4_c.jpg,line chart,atomic-layer-deposition/simulation-usecase/13/fig4,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig8_a.jpg,line chart,atomic-layer-deposition/simulation-usecase/13/fig8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig8_b.jpg,line chart,atomic-layer-deposition/simulation-usecase/13/fig8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig9_a.jpg,line chart,atomic-layer-deposition/simulation-usecase/13/fig9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig9_b.jpg,line chart,atomic-layer-deposition/simulation-usecase/13/fig9,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_11_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/13/fig_11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_11_b.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/13/fig_11,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_5_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_5_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_5_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_5,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_5_d.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_5,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_5_e.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_5,e
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_5_f.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_5,f
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_d.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_e.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,e
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_f.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,f
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_g.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,g
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_6_h.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_6,h
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_7_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_7_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_13_fig_7_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/13/fig_7,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_1_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_1_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_1_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_1,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_1_d.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_1,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_1_e.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_1,e
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_1_f.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_1,f
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_10_a.jpg,multiple line chart,atomic-layer-deposition/simulation-usecase/24/fig_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_11_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/24/fig_11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_2_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/24/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_3_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/24/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_4_a.jpg,multiple line chart,atomic-layer-deposition/simulation-usecase/24/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_5_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_5_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/24/fig_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_6_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/24/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_7_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/24/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_8_a.jpg,multiple line chart,atomic-layer-deposition/simulation-usecase/24/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_24_fig_9_a.jpg,multiple line chart,atomic-layer-deposition/simulation-usecase/24/fig_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_ab829c08613466b1bd1b39ce38d7de3fe4b532c08a4a38a66a80ce13f12f4ee0_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/ab829c08613466b1bd1b39ce38d7de3fe4b532c08a4a38a66a80ce13f12f4ee0,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_ab829c08613466b1bd1b39ce38d7de3fe4b532c08a4a38a66a80ce13f12f4ee0_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/ab829c08613466b1bd1b39ce38d7de3fe4b532c08a4a38a66a80ce13f12f4ee0,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_ab829c08613466b1bd1b39ce38d7de3fe4b532c08a4a38a66a80ce13f12f4ee0_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/ab829c08613466b1bd1b39ce38d7de3fe4b532c08a4a38a66a80ce13f12f4ee0,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557_d.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/ad9b3cb6174a00ce692e05e28ca5e82c5e77c079265a39f78a3f8949736e3557,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_1_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_2_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_3_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_3_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_5_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_6_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_6_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_6,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_6_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_6,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_7_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_7_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_7_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_7,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_8_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_8_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_8_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_8,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_9_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_9_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_9,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_39_fig_9_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/39/fig_9,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_1fae3cc981298a0b2b2e2a5208a4d212317fb21e451477d03e4cdd3f15de8a64_a.jpg,conceptual diagram,atomic-layer-deposition/simulation-usecase/4/1fae3cc981298a0b2b2e2a5208a4d212317fb21e451477d03e4cdd3f15de8a64,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_1_a.jpg,conceptual diagram,atomic-layer-deposition/simulation-usecase/4/figure_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_2_a.jpg,multiple scatter plot,atomic-layer-deposition/simulation-usecase/4/figure_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_3_a.jpg,multiple scatter plot,atomic-layer-deposition/simulation-usecase/4/figure_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_3_b.jpg,multiple scatter plot,atomic-layer-deposition/simulation-usecase/4/figure_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_4_a.jpg,unknown,atomic-layer-deposition/simulation-usecase/4/figure_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_4_b.jpg,unknown,atomic-layer-deposition/simulation-usecase/4/figure_4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_4_c.jpg,unknown,atomic-layer-deposition/simulation-usecase/4/figure_4,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_4_d.jpg,multiple line chart,atomic-layer-deposition/simulation-usecase/4/figure_4,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_5_b.jpg,stacked spectra chart,atomic-layer-deposition/simulation-usecase/4/figure_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_5_a.jpg,stacked spectra chart,atomic-layer-deposition/simulation-usecase/4/figure_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_6_a.jpg,line chart,atomic-layer-deposition/simulation-usecase/4/figure_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_4_figure_6_b.jpg,line chart,atomic-layer-deposition/simulation-usecase/4/figure_6,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig1_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig1_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig1_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig1,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig7_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig7_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_2_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/50/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_2_b.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/50/fig_2,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_2_c.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/50/fig_2,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_2_d.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/50/fig_2,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_2_e.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/50/fig_2,e
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_3_a.jpg,conceptual diagram,atomic-layer-deposition/simulation-usecase/50/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_4_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_4_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig_4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_5_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_5_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_6_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_6_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig_6,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_50_fig_6_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/50/fig_6,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_4d29a97a51094e9b24562cfa2dca9544e86f7d8c9fc36d0b2e8078ef0af11b16_a.jpg,reaction scheme,atomic-layer-deposition/simulation-usecase/58/4d29a97a51094e9b24562cfa2dca9544e86f7d8c9fc36d0b2e8078ef0af11b16,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_1_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_1_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_10_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_11_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_11_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_11,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_11_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_11,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_12_a.jpg,multiple scatter plot,atomic-layer-deposition/simulation-usecase/58/figure_12,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_13_a.jpg,multiple scatter plot,atomic-layer-deposition/simulation-usecase/58/figure_13,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_2_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_3_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_4_a.jpg,scatter plot,atomic-layer-deposition/simulation-usecase/58/figure_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_5_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_6_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_6_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_6,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_6_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_6,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_7_a.jpg,multiple scatter plot,atomic-layer-deposition/simulation-usecase/58/figure_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_8_a.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_8_b.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_8_c.jpg,molecular structure diagram,atomic-layer-deposition/simulation-usecase/58/figure_8,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-deposition_simulation-usecase_58_figure_9_a.jpg,scatter plot,atomic-layer-deposition/simulation-usecase/58/figure_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_3914f7d4feee490daf175d163cfc1956eedcc7860677c8e0c5ef61030b8ba77a_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/10/3914f7d4feee490daf175d163cfc1956eedcc7860677c8e0c5ef61030b8ba77a,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_3914f7d4feee490daf175d163cfc1956eedcc7860677c8e0c5ef61030b8ba77a_b.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/10/3914f7d4feee490daf175d163cfc1956eedcc7860677c8e0c5ef61030b8ba77a,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig11_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/10/fig11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig11_b.jpg,multi spectra chart,atomic-layer-etching/experimental-usecase/10/fig11,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig13_a.jpg,molecular structure diagram,atomic-layer-etching/experimental-usecase/10/fig13,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig13_b.jpg,molecular structure diagram,atomic-layer-etching/experimental-usecase/10/fig13,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig4_a.jpg,process timing diagram,atomic-layer-etching/experimental-usecase/10/fig4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_1_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/10/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_1_b.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/10/fig_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_10_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/10/fig_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_10_b.jpg,multiple scatter plot,atomic-layer-etching/experimental-usecase/10/fig_10,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_12_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/10/fig_12,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_2_a.jpg,molecular structure diagram,atomic-layer-etching/experimental-usecase/10/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_2_b.jpg,molecular structure diagram,atomic-layer-etching/experimental-usecase/10/fig_2,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_3_a.jpg,device structure,atomic-layer-etching/experimental-usecase/10/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_3_b.jpg,device structure,atomic-layer-etching/experimental-usecase/10/fig_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_5_a.jpg,line chart,atomic-layer-etching/experimental-usecase/10/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_5_b.jpg,line chart,atomic-layer-etching/experimental-usecase/10/fig_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_6_a.jpg,line chart,atomic-layer-etching/experimental-usecase/10/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_6_b.jpg,line chart,atomic-layer-etching/experimental-usecase/10/fig_6,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_6_c.jpg,line chart,atomic-layer-etching/experimental-usecase/10/fig_6,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_7_a.jpg,line chart,atomic-layer-etching/experimental-usecase/10/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_7_b.jpg,spectra chart,atomic-layer-etching/experimental-usecase/10/fig_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_8_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/10/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_8_b.jpg,multi spectra chart,atomic-layer-etching/experimental-usecase/10/fig_8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_9_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/10/fig_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_9_b.jpg,multi spectra chart,atomic-layer-etching/experimental-usecase/10/fig_9,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_9_c.jpg,molecular structure diagram,atomic-layer-etching/experimental-usecase/10/fig_9,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_9_d.jpg,spectra chart,atomic-layer-etching/experimental-usecase/10/fig_9,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_10_fig_9_e.jpg,multi spectra chart,atomic-layer-etching/experimental-usecase/10/fig_9,e
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_6852bf4de92775362cf6a4f1fa9753359d9919398427978150996f8ff9322581_b.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/15/6852bf4de92775362cf6a4f1fa9753359d9919398427978150996f8ff9322581,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_6852bf4de92775362cf6a4f1fa9753359d9919398427978150996f8ff9322581_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/15/6852bf4de92775362cf6a4f1fa9753359d9919398427978150996f8ff9322581,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig9_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/15/fig9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_10_c.jpg,process timing diagram,atomic-layer-etching/experimental-usecase/15/fig_10,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_10_b.jpg,process timing diagram,atomic-layer-etching/experimental-usecase/15/fig_10,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_10_a.jpg,process timing diagram,atomic-layer-etching/experimental-usecase/15/fig_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_2_b.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/15/fig_2,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_2_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/15/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_3_a.jpg,bar chart,atomic-layer-etching/experimental-usecase/15/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_4_a.jpg,process timing diagram,atomic-layer-etching/experimental-usecase/15/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_5_a.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/15/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_6_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/15/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_7_c.jpg,image panel,atomic-layer-etching/experimental-usecase/15/fig_7,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_7_b.jpg,image panel,atomic-layer-etching/experimental-usecase/15/fig_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_7_a.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/15/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_15_fig_8_a.jpg,timeline chart,atomic-layer-etching/experimental-usecase/15/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig10_a.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/19/fig10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_1_a.jpg,process flow diagram,atomic-layer-etching/experimental-usecase/19/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_1_b.jpg,process flow diagram,atomic-layer-etching/experimental-usecase/19/fig_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_2_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_2_b.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_2,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_3_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_3_b.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_4_a.jpg,line chart,atomic-layer-etching/experimental-usecase/19/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_4_b.jpg,line chart,atomic-layer-etching/experimental-usecase/19/fig_4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_4_c.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/19/fig_4,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_4_d.jpg,line chart,atomic-layer-etching/experimental-usecase/19/fig_4,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_5_a.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/19/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_5_b.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/19/fig_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_6_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_7_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_7_b.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_8_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_8_b.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_8_c.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/19/fig_8,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_9_a.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/19/fig_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_19_fig_9_b.jpg,conceptual diagram,atomic-layer-etching/experimental-usecase/19/fig_9,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_c466ef032e36d8a6b1b99692843b6c50f4f3f7ca51d12676e6844eb1f694e786_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/24/c466ef032e36d8a6b1b99692843b6c50f4f3f7ca51d12676e6844eb1f694e786,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_c466ef032e36d8a6b1b99692843b6c50f4f3f7ca51d12676e6844eb1f694e786_b.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/24/c466ef032e36d8a6b1b99692843b6c50f4f3f7ca51d12676e6844eb1f694e786,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_1_a.jpg,line chart,atomic-layer-etching/experimental-usecase/24/figure_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_10_a.jpg,multi spectra chart,atomic-layer-etching/experimental-usecase/24/figure_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_11_a.jpg,multi spectra chart,atomic-layer-etching/experimental-usecase/24/figure_11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_12_a.jpg,multi spectra chart,atomic-layer-etching/experimental-usecase/24/figure_12,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_13_a.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/24/figure_13,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_13_b.jpg,reaction scheme,atomic-layer-etching/experimental-usecase/24/figure_13,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_2_a.jpg,line chart,atomic-layer-etching/experimental-usecase/24/figure_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_3_a.jpg,multiple scatter plot,atomic-layer-etching/experimental-usecase/24/figure_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_3_b.jpg,scatter plot,atomic-layer-etching/experimental-usecase/24/figure_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_4_a.jpg,scatter plot,atomic-layer-etching/experimental-usecase/24/figure_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_4_b.jpg,scatter plot,atomic-layer-etching/experimental-usecase/24/figure_4,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_5_a.jpg,multi-axis chart,atomic-layer-etching/experimental-usecase/24/figure_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_6_a.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/24/figure_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_7_a.jpg,line chart,atomic-layer-etching/experimental-usecase/24/figure_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_7_b.jpg,line chart,atomic-layer-etching/experimental-usecase/24/figure_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_7_c.jpg,line chart,atomic-layer-etching/experimental-usecase/24/figure_7,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_8_a.jpg,multiple line chart,atomic-layer-etching/experimental-usecase/24/figure_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_8_b.jpg,line chart,atomic-layer-etching/experimental-usecase/24/figure_8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_24_figure_9_a.jpg,multiple scatter plot,atomic-layer-etching/experimental-usecase/24/figure_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_1_b.jpg,apparatus diagram,atomic-layer-etching/experimental-usecase/5/figure_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_1_a.jpg,process timing diagram,atomic-layer-etching/experimental-usecase/5/figure_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_2_a.jpg,multi-axis chart,atomic-layer-etching/experimental-usecase/5/figure_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_3_b.jpg,multiple scatter plot,atomic-layer-etching/experimental-usecase/5/figure_3,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_3_a.jpg,scatter plot,atomic-layer-etching/experimental-usecase/5/figure_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_4_a.jpg,multi-axis chart,atomic-layer-etching/experimental-usecase/5/figure_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_5_b.jpg,multiple scatter plot,atomic-layer-etching/experimental-usecase/5/figure_5,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_5_a.jpg,scatter plot,atomic-layer-etching/experimental-usecase/5/figure_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_6_a.jpg,multi-axis chart,atomic-layer-etching/experimental-usecase/5/figure_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_experimental-usecase_5_figure_7_a.jpg,multi-axis chart,atomic-layer-etching/experimental-usecase/5/figure_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_05d40bf8e4185a7d637c9c609c63dc088ef74db80781baadd53a09a35b0b7607_b.jpg,molecular structure diagram,atomic-layer-etching/simulation-usecase/1/05d40bf8e4185a7d637c9c609c63dc088ef74db80781baadd53a09a35b0b7607,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_05d40bf8e4185a7d637c9c609c63dc088ef74db80781baadd53a09a35b0b7607_a.jpg,molecular structure diagram,atomic-layer-etching/simulation-usecase/1/05d40bf8e4185a7d637c9c609c63dc088ef74db80781baadd53a09a35b0b7607,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_531fd5bc67740324af3ef5f33b6ab08029b469d0484592d03ac76a6ba17c0830_c.jpg,molecular structure diagram,atomic-layer-etching/simulation-usecase/1/531fd5bc67740324af3ef5f33b6ab08029b469d0484592d03ac76a6ba17c0830,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_531fd5bc67740324af3ef5f33b6ab08029b469d0484592d03ac76a6ba17c0830_b.jpg,molecular structure diagram,atomic-layer-etching/simulation-usecase/1/531fd5bc67740324af3ef5f33b6ab08029b469d0484592d03ac76a6ba17c0830,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_531fd5bc67740324af3ef5f33b6ab08029b469d0484592d03ac76a6ba17c0830_a.jpg,molecular structure diagram,atomic-layer-etching/simulation-usecase/1/531fd5bc67740324af3ef5f33b6ab08029b469d0484592d03ac76a6ba17c0830,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_1_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_10_b.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_10,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_10_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_11_b.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_11,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_11_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_12_b.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_12,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_12_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_12,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_13_b.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_13,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_13_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_13,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_14_b.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/1/fig_14,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_14_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/1/fig_14,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_2_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_4_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_6_b.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_6,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_6_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_7_b.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_7_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/1/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_8_b.jpg,molecular structure diagram,atomic-layer-etching/simulation-usecase/1/fig_8,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_8_a.jpg,molecular structure diagram,atomic-layer-etching/simulation-usecase/1/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_9_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/1/fig_9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_9_b.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/1/fig_9,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_9_c.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/1/fig_9,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_1_fig_9_d.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/1/fig_9,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_ec1fb02c08373df4660d90bcd3038fea571293289915ab1bc0e3266659d25a55_b.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/22/ec1fb02c08373df4660d90bcd3038fea571293289915ab1bc0e3266659d25a55,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_ec1fb02c08373df4660d90bcd3038fea571293289915ab1bc0e3266659d25a55_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/22/ec1fb02c08373df4660d90bcd3038fea571293289915ab1bc0e3266659d25a55,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig9_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/22/fig9,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_10_c.jpg,process timing diagram,atomic-layer-etching/simulation-usecase/22/fig_10,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_10_b.jpg,process timing diagram,atomic-layer-etching/simulation-usecase/22/fig_10,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_10_a.jpg,process timing diagram,atomic-layer-etching/simulation-usecase/22/fig_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_2_b.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/22/fig_2,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_2_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/22/fig_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_3_a.jpg,bar chart,atomic-layer-etching/simulation-usecase/22/fig_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_4_a.jpg,process timing diagram,atomic-layer-etching/simulation-usecase/22/fig_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_5_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/22/fig_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_6_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/22/fig_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_7_c.jpg,image panel,atomic-layer-etching/simulation-usecase/22/fig_7,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_7_b.jpg,image panel,atomic-layer-etching/simulation-usecase/22/fig_7,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_7_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/22/fig_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_22_fig_8_a.jpg,timeline chart,atomic-layer-etching/simulation-usecase/22/fig_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_18a67104683988db8761e08dccfbb99f0152c8e7bd47bc3608045d11173d817f_a.jpg,image panel,atomic-layer-etching/simulation-usecase/30/18a67104683988db8761e08dccfbb99f0152c8e7bd47bc3608045d11173d817f,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_18a67104683988db8761e08dccfbb99f0152c8e7bd47bc3608045d11173d817f_b.jpg,reaction scheme,atomic-layer-etching/simulation-usecase/30/18a67104683988db8761e08dccfbb99f0152c8e7bd47bc3608045d11173d817f,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_18a67104683988db8761e08dccfbb99f0152c8e7bd47bc3608045d11173d817f_c.jpg,image panel,atomic-layer-etching/simulation-usecase/30/18a67104683988db8761e08dccfbb99f0152c8e7bd47bc3608045d11173d817f,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_1_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/30/figure_1,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_1_b.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/30/figure_1,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_1_c.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/30/figure_1,c
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_1_d.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/30/figure_1,d
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_10_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/30/figure_10,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_11_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/30/figure_11,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_12_a.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/30/figure_12,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_12_b.jpg,conceptual diagram,atomic-layer-etching/simulation-usecase/30/figure_12,b
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_2_a.jpg,line chart,atomic-layer-etching/simulation-usecase/30/figure_2,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_3_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/30/figure_3,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_4_a.jpg,line chart,atomic-layer-etching/simulation-usecase/30/figure_4,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_5_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/30/figure_5,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_6_a.jpg,multiple scatter plot,atomic-layer-etching/simulation-usecase/30/figure_6,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_7_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/30/figure_7,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_8_a.jpg,multiple line chart,atomic-layer-etching/simulation-usecase/30/figure_8,a
+/home/jovyan/tvinchur/sci_image_miner/data/crops/dev/atomic-layer-etching_simulation-usecase_30_figure_9_a.jpg,image panel,atomic-layer-etching/simulation-usecase/30/figure_9,a

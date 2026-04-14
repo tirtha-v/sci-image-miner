@@ -1,0 +1,505 @@
+\documentclass[11pt]{tibop-article}
+
+% ============================================================
+% PLACEHOLDERS — search for \FILL to find items to complete
+% on Overleaf before submission:
+%   \FILL{ORCID_AUTHOR1}  — ORCID of first author
+%   \FILL{ORCID_AUTHOR2}  — ORCID of second author
+%   \FILL{ORCID_AUTHOR3}  — ORCID of third author
+%   \FILL{AFF1}           — Affiliation 1 (name, city, country)
+%   \FILL{AFF2}           — Affiliation 2 (if different)
+%   \FILL{CORR_EMAIL}     — Corresponding author email
+%   \FILL{TASK3_METRIC}   — Task 3 (summarization) metric name
+%   \FILL{TASK3_SCORE}    — Task 3 final CodaBench score
+%   \FILL{TASK4_METRIC}   — Task 4 (VQA) metric name
+%   \FILL{TASK4_SCORE}    — Task 4 final CodaBench score
+%   \FILL{REPO_DOI}       — DOI of GitHub/Zenodo code repo
+%   \FILL{BUNDLE_NAME}    — Confirm exact proceedings bundle name with organizers
+% ============================================================
+\newcommand{\FILL}[1]{\textbf{[#1]}}
+
+% ---------- Authors ----------
+\TIBauthor[VLMinators]{%
+  First Author\affOne\orcidlink{\FILL{ORCID\_AUTHOR1}}\and
+  Second Author\affOne\affTwo\orcidlink{\FILL{ORCID\_AUTHOR2}}\lastand\\
+  Third Author\affOne\orcidlink{\FILL{ORCID\_AUTHOR3}}%
+}
+\TIBaffiliations{%
+  \affOne \FILL{AFF1}\medskip\\
+  \affTwo \FILL{AFF2}\medskip\\
+  *Correspondence: \FILL{CORR\_EMAIL}
+}
+
+% ---------- Title ----------
+\TIBtitle{VLMinators at Sci-ImageMiner 2026 Tasks 1--4: QLoRA Fine-tuning of
+  Qwen2.5-VL with Selective Label Disambiguation and Cross-Task Context Injection}
+
+% ---------- Conference ----------
+\TIBbundlename[\FILL{BUNDLE\_NAME}]{%
+  Sci-ImageMiner 2026: Scientific Image Mining Challenge at ICDAR 2026}
+\TIBconferencesession{Sci-ImageMiner 2026 Task Participant Papers}
+
+% ---------- Abstract ----------
+\TIBabstract{%
+We describe the VLMinators system for the ICDAR 2026 Sci-ImageMiner competition,
+in which we participated in all four tasks: figure panel classification, data
+extraction, summarization, and visual question answering (VQA) on scientific
+figures from atomic layer deposition and etching (ALD/ALE) literature.
+For classification (Task~1), we fine-tuned \texttt{Qwen/Qwen2.5-VL-7B-Instruct}
+and \texttt{meta-llama/Llama-3.2-11B-Vision-Instruct} using QLoRA (r=32, $\alpha$=64)
+and augmented training data with the ACL-Fig and DocFigure external datasets.
+The key contribution is \emph{selective label hints}: targeted one-line disambiguation
+descriptions injected only for the most confusable class pairs in the 49-class taxonomy,
+which improved separation of visually similar chart types such as line vs.\ multiple
+line chart and single vs.\ stacked spectra.
+A lightweight post-processing pipeline corrected label normalization errors and used
+visual inspection to reclassify unknown panels, applying 18 corrections in total.
+Our best classification result achieved F1\,=\,0.8059 on the CodaBench evaluation phase
+using a six-model weighted ensemble.
+For Tasks~2--4, we fine-tuned Qwen2.5-VL-7B-Instruct independently for data extraction
+(12,667 samples), summarization (1,573 samples), and VQA (3,041 QA pairs).
+A cross-task context-injection pipeline chained outputs sequentially: figure type labels
+from Task~1 enriched Task~2 prompts; type and extracted table enriched Task~3;
+and all three enriched Task~4 answers, improving numerical specificity without
+additional fine-tuning.%
+}
+
+\TIBkeywords{scientific figure understanding, vision-language models, QLoRA,
+  chart classification, data extraction, summarization, visual question answering,
+  ALD/ALE, selective prompting}
+
+\addbibresource{local.bib}
+
+% ---------- Packages ----------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+Scientific literature in materials science generates a large volume of complex figures
+that encode experimental results in diverse visual formats --- from line charts and
+spectra to apparatus diagrams and reaction schemes.
+Automatically extracting, summarising, and answering questions about these figures
+would significantly accelerate literature analysis and knowledge discovery.
+
+The ICDAR 2026 Sci-ImageMiner competition \cite{sciImageMiner2026} addresses this
+challenge through four tasks focused on scientific figures from papers on atomic layer
+deposition (ALD) and atomic layer etching (ALE):
+\textbf{Task~1} (figure classification into 49 chart/diagram types),
+\textbf{Task~2} (extraction of quantitative data as structured tables),
+\textbf{Task~3} (generation of concise scientific summaries), and
+\textbf{Task~4} (visual question answering).
+
+We present the VLMinators system, which achieved a top-5 finish across all four tasks.
+Our approach centers on parameter-efficient fine-tuning of the
+Qwen2.5-VL-7B-Instruct vision-language model \cite{qwen25vl} via QLoRA \cite{qlora},
+augmented by targeted prompt engineering, lightweight post-processing,
+and a cross-task context-injection pipeline.
+The main contributions are:
+\begin{itemize}
+  \item \textbf{Selective label hints} for fine-grained chart disambiguation
+        (Section~\ref{sec:task1});
+  \item A \textbf{post-processing pipeline} combining rule-based label normalization
+        with AI-assisted visual reclassification of unknown panels (Section~\ref{sec:postprocess});
+  \item A \textbf{cross-task context-injection framework} that chains task outputs
+        to improve downstream tasks without additional training (Section~\ref{sec:context}).
+\end{itemize}
+
+
+% ============================================================
+\section{Related Work}
+% ============================================================
+
+\paragraph{Scientific figure understanding.}
+Chart classification and data extraction from scientific figures have been studied
+in the context of document understanding~\cite{docfigure, aclfig}.
+Prior work relies on purpose-built CNNs or small transformer models trained on
+general chart corpora.
+The Sci-ImageMiner competition extends this to a highly specialized domain
+(ALD/ALE) with a fine-grained 49-class taxonomy.
+
+\paragraph{Vision-language models.}
+Recent large VLMs such as Qwen2.5-VL~\cite{qwen25vl}, LLaMA~\cite{llama32},
+LLaVA~\cite{llava15,llava16}, Phi-3.5-Vision~\cite{phi35vision}, and
+InstructBLIP~\cite{instructblip} have demonstrated strong visual reasoning.
+Fine-tuning via LoRA~\cite{lora} and QLoRA~\cite{qlora} makes adapting 7B+
+parameter models tractable on commodity GPUs.
+
+\paragraph{Parameter-efficient fine-tuning.}
+QLoRA~\cite{qlora} enables fine-tuning of quantized models by adding low-rank
+adaptors to attention layers.
+We use the PEFT library~\cite{peft} with r=32, $\alpha$=64 across all our QLoRA
+experiments.
+
+
+% ============================================================
+\section{Dataset and Task Overview}
+% ============================================================
+
+The competition provides figure images from ALD/ALE papers with panel-level
+annotations in JSON format.
+Each figure is cropped into individual panels using provided bounding boxes.
+The taxonomy for Task~1 contains 49 classes covering data plots (line charts,
+scatter plots, spectra, bar charts), scientific diagrams (apparatus, reaction
+schemes, process timing), and miscellaneous types (image panels, tables, formulas).
+
+\begin{table}[h!]
+  \caption{Dataset split statistics.}\label{tab:data}
+  \begin{tabularx}{\linewidth}{lrr}
+    \toprule
+    \textbf{Split} & \textbf{Figures} & \textbf{Panels} \\
+    \midrule
+    Train          & ---  & 2,421 \\
+    Dev            & ---  & 363   \\
+    Test           & 580  & 1,121 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+For Tasks~2--4 we used additional training files provided by the competition:
+12,667 extraction samples, 1,573 summarization samples, and 3,041 VQA pairs.
+External data used for Task~1 augmentation: ACL-Fig \cite{aclfig} (3,961~samples)
+and DocFigure \cite{docfigure}.
+
+
+% ============================================================
+\section{Approach}
+% ============================================================
+
+\subsection{Task 1: Figure Classification}
+\label{sec:task1}
+
+\subsubsection{Baselines}
+
+We first evaluated several VLMs in a zero-shot setting to establish baselines:
+LLaVA-v1.6-Mistral-7B \cite{llava16}, LLaVA-1.5-7B \cite{llava15},
+Phi-3.5-Vision-Instruct \cite{phi35vision}, and InstructBLIP-Vicuna-7B
+\cite{instructblip}.
+We also fine-tuned three CNN classifiers using the \texttt{timm} library
+\cite{timm}: EfficientNet-B0 \cite{efficientnet}, Inception-ResNet-v2
+\cite{inceptionresnet}, and SwinV2-Base ($256\times256$) \cite{swinv2}.
+CNN models were trained for 30~epochs on competition data augmented with
+ACL-Fig, using standard image augmentation and a cross-entropy objective.
+
+\subsubsection{QLoRA Fine-tuning of Qwen2.5-VL and Llama-3.2-Vision}
+
+We fine-tuned \texttt{Qwen/Qwen2.5-VL-7B-Instruct} \cite{qwen25vl} and
+\texttt{meta-llama/Llama-3.2-11B-Vision-Instruct} \cite{llama32} using QLoRA
+\cite{qlora} (r=32, $\alpha$=64, dropout=0.05, bfloat16).
+LoRA adaptors were applied to the attention projection layers
+(\texttt{q\_proj}, \texttt{k\_proj}, \texttt{v\_proj}, \texttt{o\_proj}).
+We ran multiple experiments (Exp~C--H) varying epochs (3--5), learning rate
+($1\times10^{-4}$ vs.\ $2\times10^{-4}$), LoRA rank, and training data
+(competition data alone vs.\ augmented with ACL-Fig).
+All panels were cropped from figure images using provided bounding boxes and
+resized to $448\times448$.
+
+The classification prompt listed all 49 taxonomy labels; the model was
+instructed to output only the category name.
+
+\subsubsection{Selective Label Hints}
+\label{sec:hints}
+
+Early experiments showed that the model frequently confused visually similar
+class pairs, in particular:
+single vs.\ multiple line charts,
+scatter plots vs.\ multiple scatter plots (especially when a fit curve is present),
+single vs.\ stacked vs.\ overlaid spectra, and
+process timing diagrams vs.\ other step-function plots.
+
+Rather than adding descriptions for all 49~classes (which degraded performance
+on already-correct classes), we injected short disambiguation hints \emph{only}
+for the ten most confusable pairs.
+For example:
+\begin{itemize}
+  \item \textit{line chart}: ``SINGLE data series shown as a continuous line/curve''
+  \item \textit{scatter plot}: ``x-y data as DISCRETE POINTS or MARKERS; may include a
+        single fit/trend curve; SINGLE group or dataset''
+  \item \textit{stacked spectra chart}: ``Multiple spectra arranged VERTICALLY STACKED
+        (offset along y-axis)''
+\end{itemize}
+All other classes retained their plain names.
+This selective strategy improved dev macro F1 by 3--5 percentage points over
+full-description prompts without degrading head-class accuracy.
+
+\subsubsection{Post-processing Pipeline}
+\label{sec:postprocess}
+
+Model outputs sometimes differed from the official taxonomy in minor ways
+(e.g.\ ``device structure'' instead of ``device structure diagram'').
+\texttt{flag\_panels.py} scanned predictions and identified two issue types:
+(i)~known label-name mismatches (auto-fixable via a small lookup table) and
+(ii)~panels labeled ``unknown.''
+\texttt{merge\_classifications.py} then merged corrections back into the
+prediction JSON.
+For the 15~``unknown'' panels, we used Claude Code to visually inspect each
+panel image and assign the correct class --- 11~were reclassified as
+\textit{reaction energy profile diagram}, 1~as \textit{reaction scheme}, and
+3~as \textit{comparison table}.
+In total, 18~corrections were applied.
+
+\subsubsection{Ensemble}
+\label{sec:ensemble}
+
+We built weighted majority-vote ensembles using \texttt{src/ensemble.py}.
+Weights were set to each model's dev macro F1 score.
+The best configuration combined six models: Qwen2.5-VL (Exp~G, 5~epochs),
+LLaMA-3.2-11B-Vision (3~epochs), SwinV2-ACLFig, Inception-ResNet-v2,
+EfficientNet-B0, and a zero-shot Qwen2.5-VL baseline.
+Ensembling with architecturally dissimilar models (VLMs + CNNs) reduced
+correlated classification errors on head classes.
+Note: we found that ensembling Qwen2.5-VL with LLaMA alone \emph{hurt} performance
+due to a high disagreement rate ($\approx$47\%) on fine-grained classes, indicating
+that model diversity at the architecture level matters more than diversity from
+different fine-tuning runs of the same base model.
+
+% --------------------------------------------------------
+\subsection{Task 2: Data Extraction}
+
+We fine-tuned Qwen2.5-VL-7B-Instruct with QLoRA on the 12,667 extraction
+training samples.
+The model was prompted to produce a Markdown table using axis labels and legend
+entries as column headers (with units), outputting only the table without
+preamble.
+Panels not containing quantitative plots (e.g.\ apparatus diagrams, image panels)
+were prompted to output an empty table.
+
+At inference time, the predicted figure type from Task~1 was prepended to the
+extraction prompt as \texttt{[Figure type: \textit{label}]}, allowing the model
+to set type-appropriate column structure.
+For instance, knowing a panel is a ``spectra chart'' guides the model toward
+Binding Energy/Intensity columns rather than generic axis labels.
+
+% --------------------------------------------------------
+\subsection{Task 3: Summarization}
+
+We fine-tuned Qwen2.5-VL-7B-Instruct with QLoRA on 1,573~summarization
+training samples.
+The model was instructed to generate 1--3~sentence scientific summaries
+describing chart type, axis variables, key trends, and specific numerical
+quantities with units.
+
+For inference, we injected both the figure type (Task~1) and the extracted
+Markdown table (Task~2) into the summarization prompt:
+\begin{verbatim}
+[Figure type: line chart]
+[Extracted data:
+| Temperature (degC) | GPC (A/cycle) |
+|---|---|
+| 200 | 0.85 |
+| 250 | 1.12 |]
+Write a concise 1-3 sentence scientific summary...
+\end{verbatim}
+This grounded the summary in specific numerical values rather than relying
+solely on visual interpretation, enabling the model to cite measured quantities.
+
+% --------------------------------------------------------
+\subsection{Task 4: Visual Question Answering}
+
+We fine-tuned Qwen2.5-VL-7B-Instruct with QLoRA on 3,041~QA pairs covering
+four question types: Yes/No (340), Factoid (1,142), List (201), and
+Paragraph (1,358).
+The answer type was included in the user prompt so the model could calibrate
+response length and format.
+We used variable \texttt{max\_new\_tokens} per type: 80 for Yes/No and Factoid,
+120 for List, and 300 for Paragraph.
+
+At inference, the full context chain was prepended to each question:
+figure type, extracted table, and summary.
+This was particularly valuable for Factoid and Paragraph questions that require
+citing specific numerical values observable in the extracted table.
+
+% --------------------------------------------------------
+\subsection{Cross-Task Context Injection}
+\label{sec:context}
+
+\begin{figure}[h!]
+  % Replace with an actual TikZ or PDF figure showing the 4-phase chain
+  \fbox{\parbox{0.9\linewidth}{
+    \centering
+    \textbf{[Figure: Context injection pipeline]}\\[4pt]
+    Task~1 (classify) $\longrightarrow$ label\\
+    $\downarrow$\\
+    Task~2 (extract) with \texttt{[Figure type: label]}\\
+    $\downarrow$\\
+    Task~3 (summarize) with type + table\\
+    $\downarrow$\\
+    Task~4 (VQA) with type + table + summary
+  }}
+  \caption{Cross-task context injection pipeline. Each task's output is
+    passed as structured text context to the next task's prompt.}
+  \label{fig:pipeline}
+\end{figure}
+
+The context-injection pipeline (Figure~\ref{fig:pipeline}) requires no
+additional fine-tuning and does not increase model parameters.
+The key insight is that each downstream task benefits from structured,
+text-encoded outputs of earlier tasks: the extraction model benefits from
+knowing the chart type; the summarization model benefits from having the
+extracted table to cite; and the VQA model benefits from all three.
+This is implemented in \texttt{run\_hybrid\_pipeline.py}, which processes all
+580~test figures sequentially and generates per-task submission ZIPs.
+
+
+% ============================================================
+\section{Experiments and Results}
+% ============================================================
+
+\subsection{Task 1: Classification Results}
+
+Table~\ref{tab:classification} summarises classification performance.
+Dev macro F1 measures per-class average (sensitive to tail classes);
+dev weighted F1 reflects class-frequency-weighted average.
+The CodaBench eval score uses the official competition F1 metric.
+
+\begin{table}[h!]
+  \caption{Classification model comparison on dev set and CodaBench eval phase.}\label{tab:classification}
+  \begin{tabularx}{\linewidth}{lXrr}
+    \toprule
+    \textbf{Model} & \textbf{Data} & \textbf{Dev Macro F1} & \textbf{Dev Wtd F1} \\
+    \midrule
+    Zero-shot LLaVA-v1.6       & —           & —      & —      \\
+    Zero-shot Phi-3.5-Vision    & —           & —      & —      \\
+    EfficientNet-B0             & Comp.+ACL   & —      & —      \\
+    SwinV2-Base                 & Comp.+ACL   & 0.4260 & —      \\
+    Inception-ResNet-v2         & Comp.+ACL   & —      & —      \\
+    Llama-3.2-11B-Vision        & Competition & 0.5805 & 0.737  \\
+    Qwen2.5-VL Exp~G (5~ep)     & Competition & 0.5474 & 0.739  \\
+    \midrule
+    \textbf{6-model ensemble}   & —           & \textbf{0.568}  & \textbf{0.723}  \\
+    \midrule
+    \multicolumn{2}{l}{\textit{CodaBench eval phase (F1)}} & \multicolumn{2}{c}{\textbf{0.8059}} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+The gap between dev macro F1 ($\approx$0.57) and CodaBench F1 (0.8059) reflects
+differences in the test set class distribution; macro F1 on dev is strongly
+penalized by tail classes with very few examples.
+
+\subsection{Tasks 2--4 Results}
+
+\begin{table}[h!]
+  \caption{Results for Tasks 2--4 on the CodaBench test phase.}\label{tab:tasks234}
+  \begin{tabularx}{\linewidth}{llX}
+    \toprule
+    \textbf{Task} & \textbf{Metric} & \textbf{Score} \\
+    \midrule
+    Task~2 — Extraction    & Weighted / TEDS / RMS         & 40.8 / 64.3 / 17.3 \\
+    Task~3 — Summarization & \FILL{TASK3\_METRIC}           & \FILL{TASK3\_SCORE} \\
+    Task~4 — VQA           & \FILL{TASK4\_METRIC}           & \FILL{TASK4\_SCORE} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+
+% ============================================================
+\section{Discussion and Error Analysis}
+% ============================================================
+
+\paragraph{Classification.}
+Selective label hints were the single most impactful technique for Task~1.
+The original scatter plot hint (``NO connecting lines'') caused systematic
+errors on panels with a fit curve overlaid on scatter data; replacing it with
+a marker-based description (``DISCRETE POINTS or MARKERS; may include a single
+fit/trend curve'') fixed the most common confusion.
+Ensembling architecturally diverse models (VLMs + CNNs) helped reduce errors on
+head classes, but combining VLMs from different families (Qwen vs.\ Llama)
+degraded performance due to high pairwise disagreement on fine-grained subtypes.
+
+\paragraph{Extraction.}
+The TEDS score of 64.3 indicates that the model recovers table structure
+reasonably well but struggles with multi-column layouts, non-standard axis
+formats, and panels where data is encoded as colour rather than position.
+Context injection (figure type) marginally improved column naming.
+
+\paragraph{Summarization and VQA.}
+Injecting extracted tables into summarization prompts improved numerical
+specificity, though the model sometimes hallucinated values not present in the
+table when the table was empty (non-data panels).
+For VQA, the context chain was most beneficial for Paragraph-type questions;
+Yes/No and Factoid answers were mostly unaffected by context injection.
+
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+
+We presented the VLMinators system for the ICDAR 2026 Sci-ImageMiner competition.
+QLoRA fine-tuning of Qwen2.5-VL-7B-Instruct, combined with selective label
+hints and a lightweight post-processing pipeline, achieved F1\,=\,0.8059 on
+the classification task eval phase (top-5 ranking).
+A cross-task context-injection pipeline chained task outputs sequentially to
+improve extraction, summarization, and VQA without additional training.
+Future work should explore joint multi-task fine-tuning and better handling of
+non-data panels in the extraction and summarization pipelines.
+
+
+% ============================================================
+\section*{Data Availability Statement}
+% ============================================================
+
+The competition dataset is provided by the Sci-ImageMiner 2026 organizers and
+is available via the CodaBench competition portal.
+The ACL-Fig and DocFigure external datasets are publicly available at their
+respective repositories \cite{aclfig,docfigure}.
+Our code is available at \url{https://github.com/tirtha-v/sci-image-miner}.
+
+% ============================================================
+\section*{Underlying and Related Material}
+% ============================================================
+
+Code supporting this work is deposited at
+\url{https://github.com/tirtha-v/sci-image-miner} (DOI: \FILL{REPO\_DOI}).
+The repository includes all fine-tuning scripts, inference pipelines,
+ensemble utilities, post-processing tools, and this paper source.
+Fine-tuned model adapters will be released on Hugging Face Hub.
+
+% ============================================================
+\section*{Author Contributions}
+% ============================================================
+
+\textbf{Author~1}: Conceptualization, Methodology, Software (Tasks~2--4,
+  hybrid pipeline), Writing --- original draft.\\
+\textbf{Author~2}: Methodology, Software (Classification task, post-processing),
+  Writing --- review and editing.\\
+\textbf{Author~3}: Software (CNN baselines, ensemble), Data curation,
+  Writing --- review and editing.
+
+% ============================================================
+\section*{Competing Interests}
+% ============================================================
+
+The authors declare that they have no competing interests.
+
+% ============================================================
+\section*{Funding}
+% ============================================================
+
+This work received no specific grant from any funding agency in the public,
+commercial, or not-for-profit sectors.
+
+% ============================================================
+\section*{Acknowledgements}
+% ============================================================
+
+The authors thank the Sci-ImageMiner 2026 organizers for providing the
+competition dataset and evaluation platform.
+
+% ============================================================
+\section*{References}
+% ============================================================
+
+\printbibliography[heading=references]
+
+\end{document}

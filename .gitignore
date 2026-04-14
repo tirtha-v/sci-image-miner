@@ -1,0 +1,41 @@
+# Model outputs, checkpoints, and large binaries
+outputs/
+logs/
+
+# Dataset images (not included in repo)
+data/crops/
+data/external/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Zip files (except paper template)
+*.zip
+!sub_template/*.zip
+
+# Environment / secrets
+.env
+*.token
+hf_token*.txt
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+sub_template/
+ALD-E-ImageMiner/

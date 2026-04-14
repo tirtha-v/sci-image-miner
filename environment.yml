@@ -1,0 +1,20 @@
+name: sci_image_miner
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - torchvision
+  - pytorch-cuda=12.1
+  - pip:
+    - transformers>=4.45.0
+    - accelerate>=0.26.0
+    - Pillow>=10.0.0
+    - qwen-vl-utils>=0.0.8
+    - huggingface_hub>=0.24.0
+    - tqdm
+    - difflib2
