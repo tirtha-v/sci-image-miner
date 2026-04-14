@@ -30,6 +30,24 @@ We participated in all four tasks: Figure Classification, Data Extraction, Summa
 
 ```
 sci-image-miner/
+├── tasks/                        # Reproduction scripts, organised by task
+│   ├── task1_classification/
+│   │   ├── finetune_vlm.py       # QLoRA fine-tune Llama-3.2-11B (VLM)
+│   │   ├── finetune_cnn.py       # Fine-tune CNN (EfficientNet / SwinV2 / Inception)
+│   │   ├── predict_qwen.py       # Inference: QLoRA-finetuned Qwen2.5-VL
+│   │   ├── predict_llama.py      # Inference: QLoRA-finetuned Llama-3.2-11B
+│   │   ├── predict_cnn.py        # Inference: CNN classifier
+│   │   └── predict_zeroshot.py   # Zero-shot inference (LLaVA / Phi / InstructBLIP)
+│   ├── task2_extraction/
+│   │   ├── finetune.py           # QLoRA fine-tune Qwen2.5-VL for data extraction
+│   │   └── predict.py            # Extraction inference + submission zip
+│   ├── task3_summarization/
+│   │   ├── finetune.py           # QLoRA fine-tune Qwen2.5-VL for summarization
+│   │   └── predict.py            # Summarization inference + submission zip
+│   ├── task4_vqa/
+│   │   ├── finetune.py           # QLoRA fine-tune Qwen2.5-VL for VQA
+│   │   └── predict.py            # VQA inference + submission zip
+│   └── pipeline.py               # End-to-end context-injection pipeline (Tasks 1→4)
 ├── src/                          # Core Python library
 │   ├── prompts.py                # VLM prompt templates + selective label hints
 │   ├── ensemble.py               # Weighted voting ensemble
@@ -37,10 +55,13 @@ sci-image-miner/
 │   ├── evaluation.py             # Metrics (macro/weighted F1)
 │   ├── cnn/                      # CNN classifier (EfficientNet, SwinV2, Inception)
 │   ├── models/                   # Zero-shot VLM wrappers
-│   └── vlm_finetune/             # QLoRA training + inference
-├── class_post_processing/        # Post-processing for classification
+│   └── vlm_finetune/             # QLoRA training + inference helpers
+├── postprocessing/               # Post-processing for Task 1 output
 │   ├── flag_panels.py            # Identify unknown/out-of-taxonomy predictions
 │   └── merge_classifications.py  # Apply corrections to final JSON
+├── data_prep/                    # Data preparation utilities
+│   ├── prepare_external_data.py  # Map ACL-Fig / DocFigure to competition taxonomy
+│   └── prepare_vqa_data.py       # Extract VQA pairs from competition JSONs
 ├── data/                         # Dataset metadata (CSVs only; images not included)
 │   ├── train_panels.csv          # 2,421 training panels
 │   ├── dev_panels.csv            # 363 dev panels
@@ -48,23 +69,20 @@ sci-image-miner/
 │   ├── train_extraction.csv      # 12,667 extraction samples
 │   ├── train_summarization.csv   # 1,573 summarization samples
 │   └── train_vqa.csv             # 3,041 VQA pairs
-├── run_vlm_finetune.py           # QLoRA fine-tuning (classification)
-├── run_qwen_qlora_predict.py     # Classification inference
-├── run_qwen_extraction_finetune.py
-├── run_qwen_extraction_predict.py
-├── run_qwen_summarization_finetune.py
-├── run_qwen_summarization_predict.py
-├── run_qwen_vqa_finetune.py
-├── run_qwen_vqa_predict.py
-├── run_hybrid_pipeline.py        # End-to-end context-injection pipeline
-├── run_cnn_train.py              # CNN fine-tuning
-├── run_cnn_predict.py            # CNN inference
-├── src/ensemble.py               # Weighted voting ensemble
 ├── paper/                        # ICDAR 2026 paper (LaTeX)
-├── sub_template/                 # TIB Open Publishing template
-├── data_extraction/              # Data extraction task documentation
+│   ├── sci_imageminer_2026.tex   # Main paper source
+│   ├── local.bib                 # Bibliography
+│   └── tibop-article.cls         # TIB Open Publishing class file
+├── scripts/                      # Shell scripts for training and evaluation
+│   ├── train_task1_vlm.sh        # Fine-tune Qwen2.5-VL (Task 1)
+│   ├── train_task1_llama.sh      # Fine-tune Llama-3.2-11B (Task 1)
+│   ├── train_task1_cnn.sh        # Fine-tune CNN models (Task 1)
+│   ├── train_task2_extraction.sh # Fine-tune + infer Task 2
+│   ├── build_ensemble.sh         # Build weighted voting ensemble
+│   ├── eval_task1_ensemble.sh    # Evaluate ensemble on dev set
+│   └── eval_task1_vlms.sh        # Evaluate VLMs on dev set
 ├── environment.yml               # Conda environment
-└── ALD-E-ImageMiner/             # Competition data (git submodule)
+└── ALD-E-ImageMiner/             # Competition data (cloned separately — see Setup)
 ```
 
 ---
@@ -93,32 +111,39 @@ export HUGGING_FACE_HUB_TOKEN=<your_token>
 
 ### Task 1 — Classification
 
+All commands are run from the **repo root**.
+
 **Fine-tune Qwen2.5-VL:**
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python run_vlm_finetune.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python tasks/task1_classification/finetune_vlm.py \
     --model-id Qwen/Qwen2.5-VL-7B-Instruct \
     --train-csv data/train_panels.csv \
     --output-dir outputs/qwen2vl_qlora \
     --epochs 5 --lora-r 32 --lora-alpha 64 --lr 1e-4
 ```
 
-**Inference on test set:**
+> To fine-tune Llama-3.2-11B instead, use the same script with `--model-id meta-llama/Llama-3.2-11B-Vision-Instruct`.
+
+**Fine-tune CNN (EfficientNet / SwinV2 / Inception-ResNet-v2):**
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python run_qwen_qlora_predict.py \
+python tasks/task1_classification/finetune_cnn.py --model efficientnet_b0
+```
+
+**Inference on dev/test set (Qwen QLoRA):**
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 python tasks/task1_classification/predict_qwen.py \
     --adapter-path outputs/qwen2vl_qlora/adapter \
     --test-root ALD-E-ImageMiner/icdar2026-competition-data/test \
     --output-dir outputs/qwen2vl_qlora/test
 ```
 
-**Post-processing:**
+**Post-processing (flag unknown labels → merge corrections):**
 ```bash
-# Flag unknown/invalid labels
-python class_post_processing/flag_panels.py \
+python postprocessing/flag_panels.py \
     outputs/qwen2vl_qlora/test/prediction_data.json \
     --output-dir outputs/flagged
 
-# After manual/Claude reclassification, merge corrections
-python class_post_processing/merge_classifications.py \
+python postprocessing/merge_classifications.py \
     outputs/qwen2vl_qlora/test/prediction_data.json \
     outputs/flagged/flagged_panels.json \
     --output-dir outputs/corrected
@@ -139,22 +164,23 @@ python src/ensemble.py \
 Each follows the same fine-tune → predict pattern:
 
 ```bash
-# Data Extraction
-python run_qwen_extraction_finetune.py --output-dir outputs/extraction_qlora
-python run_qwen_extraction_predict.py \
+# Task 2 — Data Extraction
+python tasks/task2_extraction/finetune.py --output-dir outputs/extraction_qlora
+python tasks/task2_extraction/predict.py \
     --adapter-path outputs/extraction_qlora/adapter \
+    --mode test \
     --test-root ALD-E-ImageMiner/icdar2026-competition-data/test \
     --output-dir outputs/extraction_qlora/test
 
-# Summarization
-python run_qwen_summarization_finetune.py --output-dir outputs/summarization_qlora
-python run_qwen_summarization_predict.py \
+# Task 3 — Summarization
+python tasks/task3_summarization/finetune.py --output-dir outputs/summarization_qlora
+python tasks/task3_summarization/predict.py \
     --adapter-path outputs/summarization_qlora/adapter \
     --mode test --output-dir outputs/summarization_qlora/test
 
-# VQA
-python run_qwen_vqa_finetune.py --output-dir outputs/vqa_qlora
-python run_qwen_vqa_predict.py \
+# Task 4 — VQA
+python tasks/task4_vqa/finetune.py --output-dir outputs/vqa_qlora
+python tasks/task4_vqa/predict.py \
     --adapter-path outputs/vqa_qlora/adapter \
     --mode test --output-dir outputs/vqa_qlora/test
 ```
@@ -164,7 +190,7 @@ python run_qwen_vqa_predict.py \
 Run all four tasks sequentially with context chained across tasks:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python run_hybrid_pipeline.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python tasks/pipeline.py \
     --classification-adapter outputs/qwen2vl_qlora/adapter \
     --extraction-adapter outputs/extraction_qlora/adapter \
     --summarization-adapter outputs/summarization_qlora/adapter \
@@ -218,7 +244,7 @@ LaTeX source: [`paper/sci_imageminer_2026.tex`](paper/sci_imageminer_2026.tex)
   title     = {VLMinators at Sci-ImageMiner 2026 Tasks 1--4: QLoRA Fine-tuning of
                Qwen2.5-VL with Selective Label Disambiguation and Cross-Task
                Context Injection},
-  author    = {PLACEHOLDER},
+  author    = {VLMinators},
   booktitle = {Sci-ImageMiner 2026: Scientific Image Mining Challenge at ICDAR 2026},
   year      = {2026},
   publisher = {TIB Open Publishing}

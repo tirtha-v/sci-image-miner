@@ -8,7 +8,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from .label_cleaning import clean_label
+from .label_normalization import clean_label
 
 
 def crop_panels(data_root: str, split: str, crop_dir: str, csv_path: str):

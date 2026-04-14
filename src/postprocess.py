@@ -2,14 +2,14 @@
 
 import difflib
 
-from .label_cleaning import clean_label
+from .label_normalization import clean_label
 
 
 def normalize_label(raw_output: str, taxonomy: list[str]) -> str:
     """Map raw model output to the closest taxonomy label.
 
     Strategy:
-        0. Fix known typos via label_cleaning
+        0. Fix known typos via label_normalization
         1. Exact match (case-insensitive, stripped)
         2. Substring match
         3. Fuzzy match via difflib (cutoff=0.5)

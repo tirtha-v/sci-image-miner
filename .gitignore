@@ -39,3 +39,7 @@ hf_token*.txt
 Thumbs.db
 sub_template/
 ALD-E-ImageMiner/
+
+# Internal planning / competition notes (not for public repo)
+docs/
+
