@@ -32,7 +32,7 @@ We participated in all four tasks: Figure Classification, Data Extraction, Summa
 sci-image-miner/
 ├── tasks/                        # Reproduction scripts, organised by task
 │   ├── task1_classification/
-│   │   ├── finetune_vlm.py       # QLoRA fine-tune Llama-3.2-11B (VLM)
+│   │   ├── finetune_vlm.py       # QLoRA fine-tune VLM (Qwen2.5-VL or Llama-3.2-11B)
 │   │   ├── finetune_cnn.py       # Fine-tune CNN (EfficientNet / SwinV2 / Inception)
 │   │   ├── predict_qwen.py       # Inference: QLoRA-finetuned Qwen2.5-VL
 │   │   ├── predict_llama.py      # Inference: QLoRA-finetuned Llama-3.2-11B
@@ -62,8 +62,9 @@ sci-image-miner/
 ├── data_prep/                    # Data preparation utilities
 │   ├── prepare_external_data.py  # Map ACL-Fig / DocFigure to competition taxonomy
 │   └── prepare_vqa_data.py       # Extract VQA pairs from competition JSONs
-├── data/                         # Dataset metadata (CSVs only; images not included)
-│   ├── train_panels.csv          # 2,421 training panels
+├── data/                         # Training data
+│   ├── crops/                    # Pre-cropped panel images (2,761 JPGs, ~140 MB)
+│   ├── train_panels.csv          # 2,421 training panels (image_path, label, ...)
 │   ├── dev_panels.csv            # 363 dev panels
 │   ├── train_aclfig.csv          # 3,962 ACL-Fig panels
 │   ├── train_extraction.csv      # 12,667 extraction samples
@@ -82,7 +83,7 @@ sci-image-miner/
 │   ├── eval_task1_ensemble.sh    # Evaluate ensemble on dev set
 │   └── eval_task1_vlms.sh        # Evaluate VLMs on dev set
 ├── environment.yml               # Conda environment
-└── ALD-E-ImageMiner/             # Competition data (cloned separately — see Setup)
+└── ALD-E-ImageMiner/             # Competition data (git submodule → sciknoworg/ALD-E-ImageMiner)
 ```
 
 ---
@@ -90,18 +91,15 @@ sci-image-miner/
 ## Setup
 
 ```bash
-# 1. Clone this repo
-git clone https://github.com/tirtha-v/sci-image-miner.git
+# 1. Clone this repo with competition data (submodule)
+git clone --recurse-submodules https://github.com/tirtha-v/sci-image-miner.git
 cd sci-image-miner
 
-# 2. Clone competition data into the expected location
-git clone https://github.com/sciknoworg/ALD-E-ImageMiner.git ALD-E-ImageMiner
-
-# 3. Create conda environment
+# 2. Create conda environment
 conda env create -f environment.yml
 conda activate llpr_og_paper
 
-# 4. Set HuggingFace token (needed for Llama/Qwen downloads)
+# 3. Set HuggingFace token (needed for Llama/Qwen downloads)
 export HUGGING_FACE_HUB_TOKEN=<your_token>
 ```
 

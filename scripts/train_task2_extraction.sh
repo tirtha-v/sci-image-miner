@@ -6,7 +6,7 @@ echo "[queue] Waiting for dev inference (PID 2414) to finish..."
 while kill -0 2414 2>/dev/null; do sleep 30; done
 echo "[queue] Dev done. Starting test inference..."
 
-CUDA_VISIBLE_DEVICES=0,1,2,3 python3 run_qwen_extraction_predict.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 tasks/task2_extraction/predict.py \
     --adapter-path outputs/qwen2vl_extraction_qlora/adapter \
     --mode test \
     --test-root ALD-E-ImageMiner/icdar2026-competition-data/test \

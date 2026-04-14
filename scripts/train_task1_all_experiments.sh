@@ -45,7 +45,7 @@ predict_test() {
     echo "  Test inference → $OUT_DIR ..."
     if [ "$MODEL_TYPE" = "qwen" ]; then
         PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
-        CUDA_VISIBLE_DEVICES=0,1,2,3 $PYTHON run_qwen_qlora_predict.py \
+        CUDA_VISIBLE_DEVICES=0,1,2,3 $PYTHON tasks/task1_classification/predict_qwen.py \
             --adapter-path "$ADAPTER_PATH" \
             --test-root "$TEST_ROOT" \
             --output-dir "$OUT_DIR" \
@@ -88,7 +88,7 @@ print(f'  ★ Dev macro F1={f1_score(y_true,y_pred,average=\"macro\",zero_divisi
     fi
     echo "  Evaluating $ADAPTER_PATH ..."
     if [ "$MODEL_TYPE" = "qwen" ]; then
-        CUDA_VISIBLE_DEVICES=0,1 $PYTHON run_qwen_qlora_predict.py \
+        CUDA_VISIBLE_DEVICES=0,1 $PYTHON tasks/task1_classification/predict_qwen.py \
             --adapter-path "$ADAPTER_PATH" \
             --panels-csv data/dev_panels.csv \
             --output-dir "$OUT_DIR" \
